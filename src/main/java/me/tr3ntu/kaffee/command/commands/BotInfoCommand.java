@@ -29,7 +29,7 @@ public class BotInfoCommand implements ICommand {
         m.addField("\uD83C\uDF10 Server Count", "In " + String.valueOf(guilds.size()) + " servers",true);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy h:mm a");
         m.addField(":clock2: Creation date", ctx.getMember().getTimeCreated().format(formatter), true);
-        m.setDescription("Official Server:" + "https://discord.gg/C6jx6u6KzD\n");
+        m.setDescription("Kaffee's Official Community Server: " + "https://discord.gg/C6jx6u6KzD\n");
         m.setFooter("\n\nCreated by Tr3ntu#0001", "https://images-ext-1.discordapp.net/external/MmPH3E0_AUA6cE0-QkFa2kM5nvhonrqU6bOj3C3YgCg/https/cdn.discordapp.com/avatars/571414793454485511/4e135ac814cbc7ae8103e5518e6c6462.png");
 
         ctx.getChannel().sendMessage(m.build()).queue();
