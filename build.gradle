@@ -11,12 +11,19 @@ version '1.0'
 
 sourceCompatibility = JavaVersion.VERSION_11
 
+
+
 repositories {
     jcenter()
+    mavenCentral()
+    maven {
+        name 'm2-dv8tion'
+        url 'https://m2.dv8tion.net/releases'
+    }
 }
 
 dependencies {
-    implementation group: 'net.dv8tion', name: 'JDA', version: '4.2.0_231'
+    implementation group: 'net.dv8tion', name: 'JDA', version: '4.4.0_350'
     implementation group: 'me.duncte123', name: 'botCommons', version: '1.0.73'
     implementation group: 'com.jagrosh', name: 'jda-utilities', version: '3.0.1'
     implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
